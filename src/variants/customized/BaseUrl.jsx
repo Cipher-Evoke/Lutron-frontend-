@@ -9,7 +9,7 @@ import {
   clearAuthRedirectFlag,
 } from "../../utils/authRedirectGuard";
 
-const DEFAULT_API = "http://localhost:8000";
+const DEFAULT_API = "https://lutron.onrender.com";
 
 /**
  * API origin resolution.

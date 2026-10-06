@@ -59,7 +59,7 @@ export function writeUiVariantLockedLocal(locked) {
 
 function getApiBaseUrl(options = {}) {
   if (options.apiUrl) return String(options.apiUrl).replace(/\/+$/, '');
-  const raw = String(process.env.REACT_APP_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
+  const raw = String(process.env.REACT_APP_API_URL || 'https://lutron.onrender.com').replace(/\/+$/, '');
   if (typeof window !== 'undefined' && window.location?.hostname) {
     try {
       const bakedHost = (new URL(raw).hostname || '').toLowerCase();

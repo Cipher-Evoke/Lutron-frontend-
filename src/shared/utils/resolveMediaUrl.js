@@ -41,7 +41,7 @@ export function resolvePublicAssetUrl(path) {
  *   (LAN IP / custom host / 127.0.0.1) at the baked port.
  */
 export function resolveApiOrigin() {
-  const raw = (process.env.REACT_APP_API_URL || "http://localhost:8000").replace(/\/+$/, '');
+  const raw = (process.env.REACT_APP_API_URL || "https://lutron.onrender.com").replace(/\/+$/, '');
   if (typeof window !== "undefined" && window.location?.hostname) {
     try {
       const bakedHost = (new URL(raw).hostname || "").toLowerCase();
