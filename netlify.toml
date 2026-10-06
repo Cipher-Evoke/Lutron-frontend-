@@ -14,7 +14,7 @@
   NPM_FLAGS = "--no-audit --no-fund"
   # CRA bakes REACT_APP_* at build time. Fallback is only for preview builds
   # without the env var set — set the real value in the Netlify UI.
-  REACT_APP_API_URL = "http://127.0.0.1:8000"
+  REACT_APP_API_URL = "https://lutron.onrender.com"
   GENERATE_SOURCEMAP = "false"
   DISABLE_ESLINT_PLUGIN = "true"
   ESLINT_NO_DEV_ERRORS = "true"
